@@ -35,7 +35,7 @@ export async function fetchRevenue() {
 }
 
 export async function fetchLatestInvoices() {
-  // noStore();
+  noStore();
 
   try {
     const data = await sql<LatestInvoiceRaw>`
@@ -57,7 +57,7 @@ export async function fetchLatestInvoices() {
 }
 
 export async function fetchCardData() {
-  // noStore();
+  noStore();
 
   try {
     // You can probably combine these into a single SQL query
